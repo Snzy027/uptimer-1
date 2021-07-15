@@ -39,7 +39,7 @@ module.exports = async (projects, client) => {
         { new: true }
       );
 
-      client.channels.cache.get(error_logs)?.send(embed);
+      client.channels.cache.get(error_logs).send(embed);
     } finally {
       if (!errors) {
         pinged++;
